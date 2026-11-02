@@ -41,8 +41,7 @@ Casas residenciales en condominio cerrado en San Andrés Ocotlán, Calimaya, a p
 
 - Fotos reales (capturas del sitio oficial, baja resolución ~1000 px de ancho) en `public/media/`: fachada de casas, jardín trasero del modelo Castilla Plus, recámara principal, recámara infantil.
 - Precio: solo de portales de anuncios ("desde $3,250,000 MXN"); el cliente aprobó mostrarlo como precio de referencia con aviso.
-- Amenidades: según anuncios, casa club (alberca techada, canchas de pádel, salón de usos múltiples, ludoteca, gimnasio) en construcción o próxima; áreas verdes, juegos infantiles, canchas deportivas, estacionamiento de visitas y caseta de vigilancia con acceso controlado. Varios anuncios anuncian la seguridad como 24/7. Fuentes: Inmuebles24, Vivanuncios, Pincali, Mercado Libre (consultados nov. 2026).
-- Cercanía: anuncios citan "a unos 5 minutos de Punta Zero" y 10–15 minutos a Metepec / Galerías Metepec. En la página se muestran como aproximados, con aviso de que varían con el tráfico.
+- Amenidades: según anuncios, casa club (alberca, canchas de pádel, salón de usos múltiples, ludoteca, gimnasio) en construcción o próxima; áreas verdes, juegos infantiles, canchas deportivas y caseta de vigilancia con acceso controlado.
 - No hay: testimonios, reseñas citables, nombres de asesores, horarios de oficina ni fotos de amenidades. No inventarlos.
 
 ## Product Principles
