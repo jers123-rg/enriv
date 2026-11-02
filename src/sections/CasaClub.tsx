@@ -7,8 +7,8 @@ export function CasaClub() {
     <SectionCurtain color="bg-cream">
       <section id="amenidades" className="bg-navy px-6 py-24 text-cream md:px-10 md:py-32">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-4 md:grid-cols-[9rem_1fr] md:gap-10">
-            <p className="font-serif text-3xl text-gold tabular-nums md:pt-2 md:text-right md:text-5xl">
+          <div className="grid gap-4 md:grid-cols-[11rem_1fr] md:gap-10">
+            <p className="font-serif text-3xl text-gold tabular-nums md:pt-2 md:text-right md:text-6xl">
               <span className="sr-only">Hora: </span>17:00
             </p>
             <div>
@@ -20,7 +20,7 @@ export function CasaClub() {
             </div>
           </div>
 
-          <div className="mt-16 grid gap-12 md:ml-[11.5rem] md:grid-cols-2 md:gap-16">
+          <div className="mt-16 grid gap-12 md:ml-[13.5rem] md:grid-cols-2 md:gap-16">
             <div>
               <h3 className="flex flex-wrap items-center gap-3 font-serif text-2xl">
                 Casa club
@@ -50,7 +50,7 @@ export function CasaClub() {
             </div>
           </div>
 
-          <p className="mt-12 text-sm text-cream/60 md:ml-[11.5rem]">
+          <p className="mt-12 text-sm text-cream/60 md:ml-[13.5rem]">
             Amenidades según el material de venta publicado. Pregunta a tu asesor por el avance de obra.
           </p>
         </div>

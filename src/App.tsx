@@ -8,7 +8,6 @@ import { Hero } from "./sections/Hero";
 import { Intro } from "./sections/Intro";
 import { Casas } from "./sections/Casas";
 import { CasaClub } from "./sections/CasaClub";
-import { Galeria } from "./sections/Galeria";
 import { Ubicacion } from "./sections/Ubicacion";
 import { Contacto } from "./sections/Contacto";
 import { Footer } from "./sections/Footer";
@@ -28,7 +27,6 @@ export default function App() {
             <Casas />
             <CasaClub />
             <ScrubSection section={escenas.noche} />
-            <Galeria />
             <Ubicacion />
             <Contacto />
           </main>

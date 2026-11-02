@@ -20,14 +20,14 @@ export function Intro() {
             vigilancia. Recorre cómo se vive aquí, de la mañana a la noche.
           </p>
 
-          <ol className="mt-16 grid gap-y-10 border-t border-navy/15 sm:grid-cols-2 md:grid-cols-4">
+          <ol className="mt-16 ml-1 grid gap-y-10 border-l border-navy/15 pl-8 md:ml-0 md:grid-cols-4 md:border-t md:border-l-0 md:pl-0">
             {capitulos.map((c) => (
-              <li key={c.id} className="relative pt-8">
-                <span aria-hidden="true" className="absolute -top-[5px] left-0 h-2.5 w-2.5 rounded-full bg-gold" />
+              <li key={c.id} className="relative md:pt-8">
+                <span aria-hidden="true" className="absolute top-4 -left-[37px] h-2.5 w-2.5 rounded-full bg-gold md:-top-[5px] md:left-0" />
                 <a href={`#${c.id}`} onClick={go} className="group block pr-6">
-                  <span className="block font-serif text-4xl text-gold tabular-nums md:text-5xl">{c.hora}</span>
-                  <span className="mt-3 block text-sm text-navy/60">{c.momento}</span>
-                  <span className="mt-1 block font-serif text-xl text-navy underline decoration-transparent underline-offset-4 transition-colors duration-300 group-hover:decoration-gold">
+                  <span className="block font-serif text-4xl text-gold-deep tabular-nums md:text-5xl">{c.hora}</span>
+                  <span className="sr-only">{c.momento}: </span>
+                  <span className="mt-2 block font-serif text-xl text-navy underline decoration-transparent underline-offset-4 transition-colors duration-300 group-hover:decoration-gold">
                     {c.titulo}
                   </span>
                 </a>

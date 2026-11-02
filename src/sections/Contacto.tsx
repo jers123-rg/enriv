@@ -7,7 +7,7 @@ import { direccion, mensajeWhatsApp, telefono, whatsappUrl } from "../data/conte
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const fieldClass =
-  "w-full border-b border-navy/30 bg-transparent pb-2 text-base text-navy outline-none transition-colors duration-300 placeholder:text-navy/45 focus:border-gold";
+  "w-full border-b border-navy/50 bg-transparent pb-2 text-base text-navy outline-none transition-colors duration-300 placeholder:text-navy/65 focus:border-gold";
 const labelClass = "mb-1 block text-sm text-navy/70";
 
 type Form = { nombre: string; telefono: string; email: string; mensaje: string };

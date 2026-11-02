@@ -26,7 +26,7 @@ export function Ubicacion() {
                 </div>
               ))}
             </dl>
-            <p className="mt-4 text-sm text-navy/60">Tiempos aproximados en auto; varían con el tráfico.</p>
+            <p className="mt-4 text-sm text-navy/70">Tiempos aproximados en auto; varían con el tráfico.</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a

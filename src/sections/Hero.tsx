@@ -14,16 +14,23 @@ export function Hero() {
   };
 
   return (
-    <ScrubSection section={{ id: "inicio", foto: fotos.fachada, titulo: "Residencial Lomas Virreyes" }}>
-      <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-        <div className="max-w-3xl">
+    <ScrubSection section={{ id: "inicio", luz: "manana", foto: fotos.fachada, titulo: "Residencial Lomas Virreyes" }}>
+      <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+        <div className="grid max-w-4xl gap-4 md:grid-cols-[11rem_1fr] md:gap-10">
+          <motion.p
+            variants={child}
+            className="font-serif text-3xl text-gold tabular-nums [text-shadow:0_1px_14px_rgba(15,26,46,0.7)] md:pt-3 md:text-right md:text-6xl"
+          >
+            <span className="sr-only">Hora: </span>7:00<span className="sr-only"> · La llegada</span>
+          </motion.p>
+          <div>
           <motion.h1
             variants={child}
-            className="font-serif text-5xl leading-[1.02] tracking-[-0.01em] text-balance text-white md:text-7xl lg:text-8xl"
+            className="font-serif text-5xl leading-[1.02] tracking-[-0.01em] text-balance text-white md:text-7xl"
           >
             Residencial Lomas Virreyes
           </motion.h1>
-          <motion.p variants={child} className="mt-6 max-w-xl text-lg text-pretty text-white/85 md:text-xl">
+          <motion.p variants={child} className="mt-6 max-w-xl text-lg text-pretty text-white/90 md:text-xl">
             Casas en condominio cerrado en Calimaya, a minutos de Metepec. Áreas verdes, vigilancia las 24 horas y
             casa club en camino.
           </motion.p>
@@ -47,14 +54,15 @@ export function Hero() {
               Escríbenos por WhatsApp
             </a>
           </motion.div>
+          </div>
         </div>
 
-        <motion.dl variants={child} className="shrink-0 text-white md:text-right">
-          <dt className="text-sm text-white/70">Casas desde</dt>
+        <motion.dl variants={child} className="shrink-0 text-white md:pl-[13.5rem] lg:pl-0 lg:text-right">
+          <dt className="text-sm text-white/85">Casas desde</dt>
           <dd className="font-serif text-3xl lining-nums md:text-4xl">
             {precio.desde} <span className="text-lg text-white/80">MXN*</span>
           </dd>
-          <dd className="mt-3 flex items-center gap-2 text-sm text-white/75 md:justify-end">
+          <dd className="mt-3 flex items-center gap-2 text-sm text-white/85 lg:justify-end">
             <MapPin strokeWidth={1.5} className="h-4 w-4 text-gold" aria-hidden="true" />
             San Andrés Ocotlán, Calimaya
           </dd>

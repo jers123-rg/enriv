@@ -5,6 +5,8 @@
   --color-cream-dark: #efe7d6;
   --color-navy: #0f1a2e;
   --color-gold: #b6893f;
+  /* Dorado para texto sobre crema (4.5:1). */
+  --color-gold-deep: #8f6a2c;
 
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;

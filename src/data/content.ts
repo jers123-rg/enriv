@@ -49,7 +49,11 @@ export const capitulos = [
 export type Escena = {
   id: string;
   hora?: string;
+  /** Luz del momento del día sobre la foto. */
+  luz?: "manana" | "mediodia" | "noche";
   foto: { src: string; alt: string };
+  /** Segunda foto, enmarcada junto al texto. */
+  fotoExtra?: { src: string; alt: string };
   titulo: string;
   texto?: string;
 };
@@ -58,15 +62,18 @@ export const escenas = {
   jardin: {
     id: "jardin",
     hora: "13:00",
+    luz: "mediodia",
     foto: fotos.jardin,
-    titulo: "La sala se abre al jardín",
+    titulo: "El comedor se abre al jardín",
     texto:
-      "En el modelo Castilla Plus, el comedor se abre por completo hacia un jardín propio: comer afuera, ver jugar a los niños, cerrar la tarde al sol.",
+      "En el modelo Castilla Plus, el comedor se abre por completo hacia un jardín propio: comer afuera al mediodía mientras los niños juegan en el pasto.",
   },
   noche: {
     id: "noche",
     hora: "21:00",
+    luz: "noche",
     foto: fotos.recamara,
+    fotoExtra: fotos.infantil,
     titulo: "Descansar en casa",
     texto: "Recámaras amplias, con grandes ventanales y espacio para toda la familia.",
   },
@@ -102,9 +109,7 @@ export const enElResidencial = [
 ];
 
 export const cercania = [
-  { lugar: "Plaza Punta Zero", tiempo: "5 min" },
+  { lugar: "Plaza Punta Zero", tiempo: "≈ 5 min" },
   { lugar: "Centro de Metepec", tiempo: "10–15 min" },
   { lugar: "Galerías Metepec", tiempo: "10–15 min" },
 ];
-
-export const galeria = [fotos.infantil, fotos.fachada, fotos.jardin, fotos.recamara];

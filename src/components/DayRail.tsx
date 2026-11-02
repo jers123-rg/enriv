@@ -40,7 +40,7 @@ export function DayRail() {
   return (
     <nav
       aria-label="Un día en Lomas Virreyes"
-      className={`fixed top-1/2 right-6 z-40 hidden -translate-y-1/2 rounded-full bg-navy px-2.5 py-4 shadow-[0_12px_32px_-12px_rgba(15,26,46,0.5)] ring-1 ring-cream/15 transition-[opacity,translate] duration-500 ease-out lg:block ${
+      className={`fixed top-1/2 right-6 z-40 hidden -translate-y-1/2 rounded-full bg-navy px-2.5 py-4 shadow-[0_12px_32px_-12px_rgba(15,26,46,0.5)] ring-1 ring-cream/15 transition-[opacity,translate] duration-500 ease-out min-[1400px]:block ${
         visible ? "opacity-100" : "pointer-events-none translate-x-4 opacity-0"
       }`}
     >
