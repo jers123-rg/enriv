@@ -37,3 +37,21 @@ html.lenis body {
 .lenis.lenis-stopped {
   overflow: clip;
 }
+
+/* Superficies del navegador con la paleta del sitio */
+html {
+  scrollbar-color: var(--color-gold) var(--color-cream-dark);
+}
+::selection {
+  background-color: color-mix(in oklab, var(--color-gold) 35%, transparent);
+  color: var(--color-navy);
+}
+input,
+textarea {
+  caret-color: var(--color-gold);
+}
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

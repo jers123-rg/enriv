@@ -12,19 +12,17 @@ npm run build    # versión final en /dist
 
 Todo el contenido está en `src/data/content.ts`.
 
-1. Copia tus archivos a `public/media/` (por ejemplo `public/media/acceso.mp4`).
-2. En `content.ts`, reemplaza la URL correspondiente por `"/media/acceso.mp4"`.
+Las fotos están en `public/media/`. Para cambiar una, reemplaza el archivo
+conservando el nombre, o agrega uno nuevo y actualiza su ruta en `content.ts`
+(por ejemplo `"media/casa-club.jpg"`). Usa fotos de al menos 2000 px de ancho
+para la portada.
 
-Videos: para que el scroll se vea fluido, exporta los MP4 con un keyframe por
-cuadro y sin audio, por ejemplo:
+El teléfono y la dirección vienen del sitio oficial. Modelos, medidas, precio,
+tiempos de traslado y amenidades se tomaron de portales inmobiliarios;
+confírmalos con la desarrolladora antes de publicar.
 
-```bash
-ffmpeg -i original.mp4 -an -vf scale=1920:-2 -g 1 -crf 23 -movflags +faststart public/media/acceso.mp4
-```
-
-Los datos de modelos, precio y amenidades se tomaron de portales inmobiliarios
-públicos; confírmalos con el desarrollador antes de publicar. Los datos del
-asesor son de ejemplo.
+El formulario de contacto no usa servidor: arma el mensaje y abre WhatsApp al
+722 319 1919 para que el cliente lo envíe.
 
 ## Página en un solo archivo
 

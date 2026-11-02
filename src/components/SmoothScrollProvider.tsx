@@ -8,10 +8,13 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
   const [lenis, setLenis] = useState<Lenis | null>(null);
 
   useEffect(() => {
+    // Quien pidió menos movimiento conserva el scroll nativo del sistema.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const instance = new Lenis();
     instance.on("scroll", ScrollTrigger.update);
 
-    // Drive Lenis from GSAP's ticker so both share one animation frame.
+    // Lenis se mueve con el ticker de GSAP para compartir un solo cuadro de animación.
     const tick = (time: number) => instance.raf(time * 1000);
     gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
@@ -32,7 +35,7 @@ export function useLenis() {
   return useContext(LenisContext);
 }
 
-/** Scrolls to an in-page anchor through Lenis, falling back to native smooth scroll. */
+/** Desplaza a un ancla de la página con Lenis; sin Lenis, usa el scroll nativo. */
 export function useAnchorScroll() {
   const lenis = useLenis();
   return (href: string) => {

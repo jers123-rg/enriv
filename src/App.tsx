@@ -1,33 +1,42 @@
+import { MotionConfig } from "motion/react";
 import { SmoothScrollProvider } from "./components/SmoothScrollProvider";
 import { Navbar } from "./components/Navbar";
+import { DayRail } from "./components/DayRail";
+import { ContactBar } from "./components/ContactBar";
 import { ScrubSection } from "./components/ScrubSection";
-import { Modelos } from "./sections/Modelos";
-import { Stats } from "./sections/Stats";
+import { Hero } from "./sections/Hero";
+import { Intro } from "./sections/Intro";
+import { Casas } from "./sections/Casas";
+import { CasaClub } from "./sections/CasaClub";
 import { Galeria } from "./sections/Galeria";
-import { Amenidades } from "./sections/Amenidades";
-import { Precio } from "./sections/Precio";
+import { Ubicacion } from "./sections/Ubicacion";
 import { Contacto } from "./sections/Contacto";
-import { scrubSections } from "./data/content";
+import { Footer } from "./sections/Footer";
+import { escenas } from "./data/content";
 
 export default function App() {
   return (
-    <div className="relative">
-      <SmoothScrollProvider>
-        <Navbar />
-        <main>
-          <ScrubSection section={scrubSections.hero} primary />
-          <Modelos />
-          <Stats />
-          <ScrubSection section={scrubSections.acceso} />
-          <ScrubSection section={scrubSections.interiores} />
-          <Galeria />
-          <Amenidades />
-          <ScrubSection section={scrubSections.valle} />
-          <Precio />
-          <Contacto />
-        </main>
-      </SmoothScrollProvider>
-      <div className="grain-overlay" aria-hidden="true" />
-    </div>
+    <MotionConfig reducedMotion="user">
+      <div className="relative">
+        <SmoothScrollProvider>
+          <Navbar />
+          <DayRail />
+          <main>
+            <Hero />
+            <Intro />
+            <ScrubSection section={escenas.jardin} />
+            <Casas />
+            <CasaClub />
+            <ScrubSection section={escenas.noche} />
+            <Galeria />
+            <Ubicacion />
+            <Contacto />
+          </main>
+          <Footer />
+          <ContactBar />
+        </SmoothScrollProvider>
+        <div className="grain-overlay" aria-hidden="true" />
+      </div>
+    </MotionConfig>
   );
 }
